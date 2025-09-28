@@ -272,11 +272,12 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
-collision_mask = 2
+collision_mask = 6
 script = ExtResource("1_kthid")
 metadata/_edit_group_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_mask = 6
 
 [node name="AreaCollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = ExtResource("3_xojfc")
