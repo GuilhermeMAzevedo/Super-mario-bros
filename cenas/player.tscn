@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://tcjfw5ev3e16"]
+[gd_scene load_steps=28 format=3 uid="uid://tcjfw5ev3e16"]
 
 [ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Idle.png" id="1_8or6t"]
 [ext_resource type="Script" uid="uid://cgpqp3kcraeg5" path="res://cenas/player.gd" id="1_kthid"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cipjmquw1tlrv" path="res://Assets Super Mario Bros/Sprites/Mario_Shooting_Run2.png" id="15_8vo43"]
 [ext_resource type="Texture2D" uid="uid://daqnle02fss6v" path="res://Assets Super Mario Bros/Sprites/Mario_Shooting_Run3.png" id="16_o3f53"]
 [ext_resource type="Texture2D" uid="uid://1w6lqgnlyqo2" path="res://Assets Super Mario Bros/Sprites/Mario_Shooting-Slide.png" id="17_iyxja"]
+[ext_resource type="Texture2D" uid="uid://d01eopk6c4cx1" path="res://Assets Super Mario Bros/Sprites/Mario_Small_Run3.png" id="24_i3yeh"]
 [ext_resource type="Script" uid="uid://dds40ncln0y3x" path="res://cenas/animated_sprite_2d.gd" id="25_5e3xa"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kthid"]
@@ -197,7 +198,7 @@ animations = [{
 "texture": ExtResource("8_vtxll")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_s1iqd")
+"texture": ExtResource("24_i3yeh")
 }],
 "loop": true,
 "name": &"small_run",
@@ -282,7 +283,7 @@ shape = ExtResource("3_xojfc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kthid")
-animation = &"big_to_shooting"
+animation = &"small_jump"
 script = ExtResource("25_5e3xa")
 
 [node name="BodyCollisionShape2D" type="CollisionShape2D" parent="."]

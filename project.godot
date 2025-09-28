@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Super Mario Bros"
 run/main_scene="uid://71wdokojahpi"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
@@ -62,4 +62,4 @@ shoot={
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.23529412, 0.627451, 1, 1)
+environment/defaults/default_clear_color=Color(0.235294, 0.627451, 1, 1)
