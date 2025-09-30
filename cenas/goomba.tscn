@@ -32,8 +32,6 @@ size = Vector2(16, 16)
 
 [node name="Goomba" type="Area2D"]
 script = ExtResource("1_pkweq")
-horizontal_speed = null
-vertical_speed = null
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
