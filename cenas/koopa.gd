@@ -26,4 +26,4 @@ func on_stomp(player_position: Vector2):
 	set_collision_layer_value(4, true)
 
 	var movement_direction = 1 if player_position.x < global_position.x else -1
-	horizontal_speed = -movement_direction * slide_speed
+	horizontal_speed = movement_direction * slide_speed

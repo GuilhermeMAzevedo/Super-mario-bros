@@ -19,7 +19,7 @@ const POINTS_LABEL_SCENE = preload("res://cenas/points_label.tscn")
 
 @export_group("Locomotion")
 @export var run_speed_damping = 0.5
-@export var speed = 100.0
+@export var speed = 200.0
 @export var jump_velocity = -350
 @export_group("")
 
