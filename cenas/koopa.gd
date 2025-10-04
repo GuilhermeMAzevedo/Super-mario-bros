@@ -7,18 +7,18 @@ const KOOPA_SHELL_SHAPE = preload("res://Resources/CollisionShapes/koopa_shell.t
 const KOOPA_SHELL_POSITION = Vector2(0, 5)
 @onready var collision_shape_2d = $CollisionShape2D
 @export var slide_speed = 200
-var in_a_shell = false
+@export var is_in_shell = false
 
 func _ready():
 	collision_shape_2d.shape = KOOPA_FULL_SHAPE
 
 func die():
-	if !in_a_shell:
+	if !is_in_shell:
 		super.die()
 		
 	collision_shape_2d.set_deferred("shape", KOOPA_SHELL_SHAPE)
 	collision_shape_2d.set_deferred("position", KOOPA_SHELL_POSITION)
-	in_a_shell = true
+	is_in_shell = true
 
 func on_stomp(player_position: Vector2):
 	set_collision_layer_value(3, false)

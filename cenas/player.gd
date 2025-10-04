@@ -20,7 +20,7 @@ const POINTS_LABEL_SCENE = preload("res://cenas/points_label.tscn")
 @export_group("Locomotion")
 @export var run_speed_damping = 0.5
 @export var speed = 200.0
-@export var jump_velocity = -350
+@export var jump_velocity = -450
 @export_group("")
 
 @export_group("Stoping Enemies")
@@ -64,7 +64,7 @@ func handle_enemy_collision(enemy: Enemy):
 	if enemy == null || is_dead:
 		return
 	
-	if is_instance_of(enemy, Koopa) and (enemy as Koopa).is_in_shell:
+	if enemy is Koopa and (enemy as Koopa).is_in_shell:
 		(enemy as Koopa).on_stomp(global_position)
 	else:
 		var angle_of_collision = rad_to_deg(position.angle_to_point(enemy.position))
